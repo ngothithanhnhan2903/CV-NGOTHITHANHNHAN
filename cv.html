@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - NGÔ THỊ THANH NHÀN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+            color: #333;
+            line-height: 1.4;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Left Column */
+        .left-column {
+            width: 35%;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-picture img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid white;
+            object-fit: cover;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border-bottom: 1px solid white;
+            padding-bottom: 8px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .contact-icon {
+            width: 16px;
+            margin-right: 12px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .education-item {
+            margin-bottom: 25px;
+        }
+
+        .education-date {
+            font-size: 11px;
+            color: #cbd5e1;
+            margin-bottom: 8px;
+        }
+
+        .education-school {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .education-details {
+            font-size: 12px;
+            margin-left: 0;
+            list-style: none;
+        }
+
+        .education-details li {
+            margin-bottom: 4px;
+        }
+
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .skill-name {
+            flex: 1;
+        }
+
+        .skill-rating {
+            color: #fbbf24;
+            font-size: 12px;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .language-name {
+            flex: 1;
+        }
+
+        .language-level {
+            color: #cbd5e1;
+            font-size: 12px;
+        }
+
+        /* Right Column */
+        .right-column {
+            width: 65%;
+            padding: 50px 40px;
+            background-color: white;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .title {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #374151;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .section-divider {
+            height: 1px;
+            background-color: #d1d5db;
+            margin: 30px 0;
+        }
+
+        .section-title-right {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .objective-text {
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: justify;
+            color: #374151;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .experience-company {
+            font-weight: bold;
+            font-size: 14px;
+            color: #1e3a8a;
+            text-transform: uppercase;
+        }
+
+        .experience-position {
+            font-size: 13px;
+            color: #374151;
+            margin-top: 2px;
+            font-weight: normal;
+        }
+
+        .experience-date {
+            font-size: 11px;
+            color: #6b7280;
+            text-align: right;
+        }
+
+        .experience-responsibilities {
+            font-size: 12px;
+            line-height: 1.5;
+            margin-left: 0;
+            list-style: none;
+            color: #374151;
+        }
+
+        .experience-responsibilities li {
+            margin-bottom: 8px;
+        }
+
+        .skills-list {
+            font-size: 13px;
+            list-style: none;
+            color: #374151;
+        }
+
+        .skills-list li {
+            margin-bottom: 6px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+            }
+
+            .left-column, .right-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <!-- Profile Picture -->
+            <div class="profile-picture">
+                <img src="profile.jpg" alt="Profile Picture" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iNjAiIGZpbGw9IiNmM2Y0ZjYiLz4KPGNpcmNsZSBjeD0iNjAiIGN5PSI0NSIgcj0iMjAiIGZpbGw9IiM5Y2EzYWYiLz4KPHBhdGggZD0iTTMwIDkwQzMwIDc1LjY0IDQ0LjY0IDY0IDYwIDY0Qzc1LjM2IDY0IDkwIDc1LjY0IDkwIDkwVjEwMEgzMFY5MFoiIGZpbGw9IiM5Y2EzYWYiLz4KPC9zdmc+Cg=='"/>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="section">
+                <div class="section-title">Liên Lạc</div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>0356340085</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>Nhanngo.290301@gmail.com</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🎂</div>
+                    <div>29/03/2004</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>TDP6, phường Phú Bài, Thành phố Huế</div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section">
+                <div class="section-title">Học Vấn</div>
+                <div class="education-item">
+                    <div class="education-date">2010-2015</div>
+                    <div class="education-school">TRƯỜNG TIỂU HỌC SỐ 2 THỦY PHÙ</div>
+                    <ul class="education-details">
+
+                        <li>• Loại tốt nghiệp: Khá </li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <div class="education-date">2015-2019</div>
+                    <div class="education-school">TRƯỜNG TRUNG HOC CƠ SỞ THỦY PHÙ</div>
+                    <ul class="education-details">
+
+                        <li>• Loại tốt nghiệp: Khá</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <div class="education-date">2019-2022</div>
+                    <div class="education-school">TRƯỜNG TRUNG HỌC PHỔ THÔNG PHÚ BÀI</div>
+                    <ul class="education-details">
+
+                        <li>• Loại tốt nghiệp: Giỏi</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <div class="education-date">2022-2025</div>
+                    <div class="education-school">TRƯỜNG ĐẠI HỌC KHOA HỌC HUẾ</div>
+                    <ul class="education-details">
+                        <li>• Công nghệ thông tin</li>
+                        <!--<li>• GPA hiện tại 2.91</li>-->
+                        <li>• Dự kiến tốt nghiệp vào 7/2026</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Computer Skills -->
+            <!--<div class="section">
+                <div class="section-title">Tin Học</div>
+                <div class="skill-item">
+                    <div class="skill-name">• Microsoft Word</div>
+                    <div class="skill-rating">4★</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">• Microsoft Excel</div>
+                    <div class="skill-rating">4.5★</div>
+                </div>
+            </div>-->
+
+            <!-- Languages -->
+            <div class="section">
+                <div class="section-title">Ngoại Ngữ</div>
+                <div class="language-item">
+                    <div class="language-name">• Tiếng Anh</div>
+                    <div class="language-level">Trung cấp</div>
+                </div>
+                <!--<div class="language-item">
+                    <div class="language-name">• Tiếng Hàn</div>
+                    <div class="language-level">Sơ cấp</div>
+                </div>-->
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Name and Title -->
+            <div class="name">NGÔ THỊ THANH NHÀN</div>
+            <div class="title">Sinh viên ngành công nghệ thông tin</div>
+
+            <!-- Career Objective -->
+            <div class="section-divider"></div>
+            <div class="section-title-right">Mục Tiêu Nghề Nghiệp</div>
+            <div class="objective-text">
+                Tôi mong muốn tìm kiếm cơ hội thực tập/làm việc ở vị trí Java Developer để tích lũy kinh nghiệm, phát triển kỹ năng lập trình và đóng góp cho dự án của công ty. Tôi đặc biệt quan tâm đến việc áp dụng kiến thức Java Core, SQL và các công nghệ web để xây dựng ứng dụng thực tế. Đồng thời mong muốn được học hỏi từ môi trường chuyên nghiệp, rèn luyện tác phong làm việc chuẩn doanh nghiệp và phát triển lâu dài trong lĩnh vực phát triển phần mềm. Trong tương lai, tôi hướng đến việc trở thành một lập trình viên Java có chuyên môn vững, có thể đảm nhận những dự án lớn và mang lại giá trị thiết thực cho công ty.
+            </div>
+
+            <!-- Work Experience -->
+            <div class="section-divider"></div>
+            <div class="section-title-right">Kỹ năng</div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <!--<div class="experience-company">Kỹ năng chuyên môn</div>-->
+                        <div class="experience-position">Kỹ năng chuyên môn</div>
+                    </div>
+                    <!--<div class="experience-date">03/2019 - 09/2020</div>-->
+                </div>
+                <ul class="experience-responsibilities">
+                    <li>• Có kiến thức cơ bản về Java Core và lập trình hướng đối tượng (OOP), biết một chút về SQL/MySQL và thao tác dữ liệu, từng học qua HTML, CSS, JavaScript để làm giao diện đơn giản, mới bắt đầu làm quen với ReactJS (Component, State, Props, Hooks) và sử dụng Git/GitHub ở mức cơ bản trong dự án học tập.</li>
+
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <!--<div class="experience-company">Larana Studios</div>-->
+                        <div class="experience-position">Kỹ năng mềm</div>
+                    </div>
+                    <!--<div class="experience-date">01/2019 - 02/2020</div>-->
+                </div>
+                <ul class="experience-responsibilities">
+                    <li>• Có kỹ năng làm việc nhóm thông qua các bài tập dự án, biết cách trao đổi và trình bày ý tưởng, có khả năng quản lý thời gian để hoàn thành đúng tiến độ và chủ động tự học công nghệ mới ngoài chương trình học.</li>
+                </ul>
+            </div>
+
+            <!-- Other Skills -->
+            <div class="section-divider"></div>
+            <div class="section-title-right">Hoạt động ngoại khóa / Thành tích </div>
+            <ul class="skills-list">
+                <li>• Tham gia các hoạt động tình nguyện, thiện nguyện, hoạt động đoàn và các chương trình phong trào của trường.</li>
+                <li>• Đạt danh hiệu “Sinh viên 5 tốt” năm học 2022–2023.</li>
+                <li>• Được khen thưởng “Có thành tích xuất sắc trong hoạt động của khoa Công nghệ Thông tin năm học 2023–2024”.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

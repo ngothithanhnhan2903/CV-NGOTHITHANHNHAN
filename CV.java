@@ -14,11 +14,12 @@ public class CV {
                             margin: 0;
                             padding: 0;
                             box-sizing: border-box;
+                            font
                         }
 
                         body {
-                            font-family: Arial, sans-serif;
-                            background-color: #f0f0f0;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
                             color: #333;
                             line-height: 1.4;
                         }
@@ -285,25 +286,42 @@ public class CV {
                             <div class=\"section\">
                                 <div class=\"section-title\">Học Vấn</div>
                                 <div class=\"education-item\">
-                                    <div class=\"education-date\">2016-2018</div>
-                                    <div class=\"education-school\">TÊN TRƯỜNG HỌC BORCELLE UNIVERSITY</div>
+                                    <div class=\"education-date\">2010-2015</div>
+                                    <div class=\"education-school\">TRƯỜNG TIỂU HỌC SỐ 2 THỦY PHÙ</div>
                                     <ul class=\"education-details\">
-                                        <li>• Master of Business Marketing</li>
-                                        <li>• Loại tốt nghiệp</li>
+                                        
+                                        <li>• Loại tốt nghiệp: Khá </li>
                                     </ul>
                                 </div>
                                 <div class=\"education-item\">
-                                    <div class=\"education-date\">2012-2016</div>
-                                    <div class=\"education-school\">TÊN TRƯỜNG HỌC BORCELLE UNIVERSITY</div>
+                                    <div class=\"education-date\">2015-2019</div>
+                                    <div class=\"education-school\">TRƯỜNG TRUNG HOC CƠ SỞ THỦY PHÙ</div>
                                     <ul class=\"education-details\">
-                                        <li>• Master of Business Marketing</li>
-                                        <li>• Loại tốt nghiệp</li>
+                                        
+                                        <li>• Loại tốt nghiệp: Khá</li>
+                                    </ul>
+                                </div>
+                                <div class=\"education-item\">
+                                    <div class=\"education-date\">2019-2022</div>
+                                    <div class=\"education-school\">TRƯỜNG TRUNG HỌC PHỔ THÔNG PHÚ BÀI</div>
+                                    <ul class=\"education-details\">
+                                        
+                                        <li>• Loại tốt nghiệp: Giỏi</li>
+                                    </ul>
+                                </div>
+                                <div class=\"education-item\">
+                                    <div class=\"education-date\">2022-2025</div>
+                                    <div class=\"education-school\">TRƯỜNG ĐẠI HỌC KHOA HỌC HUẾ</div>
+                                    <ul class=\"education-details\">
+                                        <li>• Công nghệ thông tin</li>
+                                        <!--<li>• GPA hiện tại 2.91</li>-->
+                                        <li>• Dự kiến tốt nghiệp vào 7/2026</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Computer Skills -->
-                            <div class=\"section\">
+                            <!--<div class=\"section\">
                                 <div class=\"section-title\">Tin Học</div>
                                 <div class=\"skill-item\">
                                     <div class=\"skill-name\">• Microsoft Word</div>
@@ -313,7 +331,7 @@ public class CV {
                                     <div class=\"skill-name\">• Microsoft Excel</div>
                                     <div class=\"skill-rating\">4.5★</div>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <!-- Languages -->
                             <div class=\"section\">
@@ -322,10 +340,10 @@ public class CV {
                                     <div class=\"language-name\">• Tiếng Anh</div>
                                     <div class=\"language-level\">Trung cấp</div>
                                 </div>
-                                <div class=\"language-item\">
-                                    <div class=\"language-name\">• Tiếng Trung</div>
+                                <!--<div class=\"language-item\">
+                                    <div class=\"language-name\">• Tiếng Hàn</div>
                                     <div class=\"language-level\">Sơ cấp</div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
 
@@ -339,46 +357,47 @@ public class CV {
                             <div class=\"section-divider\"></div>
                             <div class=\"section-title-right\">Mục Tiêu Nghề Nghiệp</div>
                             <div class=\"objective-text\">
-                                Tôi là một nhân viên bán hàng chuyên nghiệp với niềm đam mê xây dựng mối quan hệ khách hàng và đạt được các mục tiêu bán hàng. Tôi mong muốn phát triển sự nghiệp trong lĩnh vực bán hàng, áp dụng kỹ năng giao tiếp và thuyết phục mạnh mẽ để tạo ra giá trị cho khách hàng và đóng góp vào sự thành công của tổ chức.
+                                Tôi mong muốn tìm kiếm cơ hội thực tập/làm việc ở vị trí Java Developer để tích lũy kinh nghiệm, phát triển kỹ năng lập trình và đóng góp cho dự án của công ty. Tôi đặc biệt quan tâm đến việc áp dụng kiến thức Java Core, SQL và các công nghệ web để xây dựng ứng dụng thực tế. Đồng thời mong muốn được học hỏi từ môi trường chuyên nghiệp, rèn luyện tác phong làm việc chuẩn doanh nghiệp và phát triển lâu dài trong lĩnh vực phát triển phần mềm. Trong tương lai, tôi hướng đến việc trở thành một lập trình viên Java có chuyên môn vững, có thể đảm nhận những dự án lớn và mang lại giá trị thiết thực cho công ty.
                             </div>
 
                             <!-- Work Experience -->
                             <div class=\"section-divider\"></div>
-                            <div class=\"section-title-right\">Kinh Nghiệm Làm Việc</div>
+                            <div class=\"section-title-right\">Kỹ năng</div>
                             
                             <div class=\"experience-item\">
                                 <div class=\"experience-header\">
                                     <div>
-                                        <div class=\"experience-company\">Larana Studios</div>
-                                        <div class=\"experience-position\">Marketing Manager</div>
+                                        <!--<div class=\"experience-company\">Kỹ năng chuyên môn</div>-->
+                                        <div class=\"experience-position\">Kỹ năng chuyên môn</div>
                                     </div>
-                                    <div class=\"experience-date\">03/2019 - 09/2020</div>
+                                    <!--<div class=\"experience-date\">03/2019 - 09/2020</div>-->
                                 </div>
                                 <ul class=\"experience-responsibilities\">
-                                    <li>• Phụ trách việc tìm kiếm và khai thác thị trường mới, xây dựng danh sách khách hàng tiềm năng: Tại công ty ABC, tôi đã chịu trách nhiệm tìm kiếm và khai thác các thị trường mới, từ đó tạo ra danh sách khách hàng tiềm năng.</li>
-                                    <li>• Tôi đã nghiên cứu và đánh giá các xu hướng thị trường để xác định các cơ hội kinh doanh mới. Tôi đã áp dụng các kỹ thuật tiếp thị và xây dựng mạng lưới khách hàng để tăng doanh số bán hàng.</li>
+                                    <li>• Có kiến thức cơ bản về Java Core và lập trình hướng đối tượng (OOP), biết một chút về SQL/MySQL và thao tác dữ liệu, từng học qua HTML, CSS, JavaScript để làm giao diện đơn giản, mới bắt đầu làm quen với ReactJS (Component, State, Props, Hooks) và sử dụng Git/GitHub ở mức cơ bản trong dự án học tập.</li>
+                                    
                                 </ul>
                             </div>
 
                             <div class=\"experience-item\">
                                 <div class=\"experience-header\">
                                     <div>
-                                        <div class=\"experience-company\">Larana Studios</div>
-                                        <div class=\"experience-position\">Marketing Manager</div>
+                                        <!--<div class=\"experience-company\">Larana Studios</div>-->
+                                        <div class=\"experience-position\">Kỹ năng mềm</div>
                                     </div>
-                                    <div class=\"experience-date\">01/2019 - 02/2020</div>
+                                    <!--<div class=\"experience-date\">01/2019 - 02/2020</div>-->
                                 </div>
                                 <ul class=\"experience-responsibilities\">
-                                    <li>• Phụ trách việc tìm kiếm và khai thác thị trường mới, xây dựng danh sách khách hàng tiềm năng: Tại công ty ABC, tôi đã chịu trách nhiệm tìm kiếm và khai thác các thị trường mới, từ đó tạo ra danh sách khách hàng tiềm năng.</li>
-                                    <li>• Tôi đã nghiên cứu và đánh giá các xu hướng thị trường để xác định các cơ hội kinh doanh mới. Tôi đã áp dụng các kỹ thuật tiếp thị và xây dựng mạng lưới khách hàng để tăng doanh số bán hàng.</li>
+                                    <li>• Có kỹ năng làm việc nhóm thông qua các bài tập dự án, biết cách trao đổi và trình bày ý tưởng, có khả năng quản lý thời gian để hoàn thành đúng tiến độ và chủ động tự học công nghệ mới ngoài chương trình học.</li>
                                 </ul>
                             </div>
 
                             <!-- Other Skills -->
                             <div class=\"section-divider\"></div>
-                            <div class=\"section-title-right\">Kỹ Năng Khác</div>
+                            <div class=\"section-title-right\">Hoạt động ngoại khóa / Thành tích </div>
                             <ul class=\"skills-list\">
-                                <li>• Branding and Identity Design</li>
+                                <li>• Tham gia các hoạt động tình nguyện, thiện nguyện, hoạt động đoàn và các chương trình phong trào của trường.</li>
+                                <li>• Đạt danh hiệu “Sinh viên 5 tốt” năm học 2022–2023.</li>
+                                <li>• Được khen thưởng “Có thành tích xuất sắc trong hoạt động của khoa Công nghệ Thông tin năm học 2023–2024”.</li>
                             </ul>
                         </div>
                     </div>
